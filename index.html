@@ -299,7 +299,7 @@
           <div class="column column-all column-primary shadow">
             <h3>Olá :)</h3>
             <br>
-            <p>Seja bem vindo, meu nome é Jonathan tenho 25 anos e trabalho com desenvolvimento desde 2011.
+            <p>Seja bem vindo, meu nome é Jonathan tenho <span id="idade"></span> anos e trabalho com desenvolvimento desde 2011.
             <br>
             Ao longo de todos esses anos sempre me dediquei em me atualizar com as novidades da área de desenvolvimento, sou
             uma pessoa autodidata que busca sempre se superar, e conhecer a fundo tudo o que me proponho a fazer.
@@ -431,6 +431,9 @@
     var infoA = document.getElementById('infoA');
     var infoB = document.getElementById('infoB');
     var itensSkills = document.getElementsByClassName("skill");
+    var idade = document.getElementById('idade');
+
+    idade.innerText = new Date(new Date().getFullYear(), 02, 22).getFullYear() - 1991;
 
     var colors = [
       { 
