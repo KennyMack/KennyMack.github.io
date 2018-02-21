@@ -433,7 +433,7 @@
     var itensSkills = document.getElementsByClassName("skill");
     var idade = document.getElementById('idade');
 
-    idade.innerText = new Date(new Date().getFullYear(), 02, 22).getFullYear() - 1991;
+    idade.innerText = Math.floor((Date.now() - new Date(1991, 02, 22)) / (24 * 3600 * 365.25 * 1000));
 
     var colors = [
       { 
